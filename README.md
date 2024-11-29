@@ -1,23 +1,24 @@
 
-# Secure File Integrity Checker
+# File Integrity Checker
 
 ## Overview
+The File Integrity Checker is a Python-based GUI application engineered for computation and verification of file hashes, ensuring data integrity and protection against unauthorized modifications or corruption. Leveraging industry-standard cryptographic hashing algorithms such as MD5, SHA-1, and SHA-256, the application provides a mechanism for validating file authenticity. Its secure file processing methodology, including chunk-based reading and in-memory hash computation, ensures optimal performance while minimizing potential attack vectors.
 
-The Secure File Integrity Checker is a Python-based GUI application engineered for computation and verification of file hashes, ensuring data integrity and protection against unauthorized modifications or corruption. Leveraging industry-standard cryptographic hashing algorithms such as MD5, SHA-1, and SHA-256, the application provides a mechanism for validating file authenticity. Its secure file processing methodology, including chunk-based reading and in-memory hash computation, ensures optimal performance while minimizing potential attack vectors. 
+
 
 ---
 
 ## Key Features
 ### 1. **Accurate Hash Calculation**
-- Supports **MD5**, **SHA-1**, and **SHA-256** hashing algorithms.
-- Processes files in **chunks** to handle large files securely and efficiently.
+- Supports widely used cryptographic algorithms: **MD5**, **SHA-1**, and **SHA-256**.
+- Processes files in **8192-byte chunks** to handle large files securely and efficiently.
 
 ### 2. **Reliable Integrity Verification**
 - Compares the calculated hash against an expected hash provided by the user.
-- Identifies tampered or corrupted files to ensure data security.
+- Detects tampered or corrupted files, ensuring data security and authenticity.
 
 ### 3. **Clipboard Integration**
-- Enables secure copying of calculated hashes for sharing or later verification.
+- Securely copies calculated hashes to the clipboard for sharing or later verification.
 
 ### 4. **Intuitive GUI**
 - Built with **Tkinter**, offering a lightweight, responsive, and error-tolerant interface.
@@ -30,25 +31,25 @@ The Secure File Integrity Checker is a Python-based GUI application engineered f
 1. **MD5**:
    - Suitable for non-critical integrity checks (e.g., simple checksums).
    - **Not secure** for cryptographic purposes due to collision vulnerabilities.
-
+   
 2. **SHA-1**:
-   - Deprecated for secure applications but included for compatibility.
-   - Use only when backward compatibility is necessary.
+   - **Deprecated** for secure applications but included for compatibility.
+   - Use only when backward compatibility is required.
 
 3. **SHA-256**:
-   - Part of the SHA-2 family and cryptographically secure.
+   - A cryptographically secure member of the SHA-2 family.
    - Recommended for all high-security use cases.
 
 ### Secure File Processing:
-- Reads files in **8192-byte chunks**, optimizing memory usage while maintaining security.
-- No temporary storage of sensitive data; hash values are held only in memory.
+- Files are read in **8192-byte chunks**, optimizing memory usage while maintaining security.
+- No temporary storage of sensitive data; hash values are held only in memory during processing.
 
 ---
 
 ## Installation
 ### Prerequisites:
 1. **Python 3.x** installed on your system.
-2. Required modules:
+2. Required Python modules:
    - **`hashlib`**: Built into Python for cryptographic hash generation.
    - **`tkinter`**: Built into Python for GUI development.
 
@@ -71,7 +72,7 @@ The Secure File Integrity Checker is a Python-based GUI application engineered f
    - Use the "Browse" button to securely select the file to hash.
 
 2. **Choose Hash Algorithm**:
-   - Select from MD5, SHA-1, or SHA-256 in the dropdown menu.
+   - Select from **MD5**, **SHA-1**, or **SHA-256** in the dropdown menu.
 
 3. **Verify Integrity**:
    - Enter an expected hash in the "Expected Hash" field.
@@ -85,35 +86,36 @@ The Secure File Integrity Checker is a Python-based GUI application engineered f
 ## Code Details
 ### Core Functions:
 1. **`calculate_file_hash(file_path, algorithm)`**:
-   - Calculates the hash of a file using the specified algorithm, processing files in chunks.
+   - Calculates the hash of a file using the specified algorithm.
+   - Processes files in chunks for memory efficiency and performance.
    - Handles errors such as unsupported algorithms and missing files.
 
 2. **`verify_file_integrity()`**:
-   - Compares the calculated hash with the expected hash value.
+   - Compares the calculated hash with the user-provided expected hash.
    - Displays results indicating whether file integrity is intact or compromised.
 
 3. **`copy_to_clipboard()`**:
    - Securely copies the calculated hash to the clipboard for easy sharing.
 
 4. **`calculate_hash_only()`**:
-   - Displays the calculated hash without requiring an expected value.
+   - Displays the calculated hash without requiring an expected hash value.
 
 ---
 
 ## Example Use Cases
 1. **Verify File Authenticity**:
-   - Check the integrity of downloaded software by comparing its hash with the one published by the vendor.
+   - Validate the integrity of downloaded files by comparing their hashes with vendor-provided values.
 
 2. **Incident Response**:
-   - Validate if files in a suspected breach or malware attack have been altered.
+   - Determine whether files in a suspected breach or malware attack have been altered.
 
 3. **Secure File Transfers**:
-   - Share hash values with recipients to ensure the transmitted file is intact.
+   - Share hash values with recipients to confirm the integrity of transmitted files.
 
 4. **Validate Backup Integrity**:
-   - Periodically verify backup files to ensure they are uncorrupted and secure.
+   - Periodically verify backup files to ensure they remain uncorrupted and secure.
 
-
+---
 
 ## Disclaimer
 This tool is intended for **educational and testing purposes only**. Users are responsible for ensuring compliance with relevant laws and regulations when using this tool in real-world scenarios.
@@ -127,4 +129,4 @@ This project is licensed under the **MIT License**. See the LICENSE file for det
 
 ## Contact
 Developed by **Ramyar Daneshgar**.  
-For questions, suggestions, or contributions, please contact: **ramyarda@usc.edu**
+For questions, suggestions, or contributions, contact: **ramyarda@usc.edu**
