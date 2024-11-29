@@ -2,7 +2,8 @@
 # Secure File Integrity Checker
 
 ## Overview
-The **Secure File Integrity Checker** is a Python-based GUI application designed to calculate and verify file hashes. It ensures data integrity by detecting unauthorized modifications or corruption in files. Supporting commonly used cryptographic hashing algorithms, this tool is a reliable solution for security professionals, developers, and end-users to verify file authenticity with ease. The application combines a robust security approach with a user-friendly interface, making it both powerful and accessible.
+
+The Secure File Integrity Checker is a Python-based GUI application engineered for computation and verification of file hashes, ensuring data integrity and protection against unauthorized modifications or corruption. Leveraging industry-standard cryptographic hashing algorithms such as MD5, SHA-1, and SHA-256, the application provides a mechanism for validating file authenticity. Its secure file processing methodology, including chunk-based reading and in-memory hash computation, ensures optimal performance while minimizing potential attack vectors. 
 
 ---
 
