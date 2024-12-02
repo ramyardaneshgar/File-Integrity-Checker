@@ -1,5 +1,11 @@
+ 
+
+
 
 # File Integrity Checker
+**Developed by Ramyar Daneshgar**
+
+**⚠️ Disclaimer**: This project is strictly for educational and research purposes. All testing has been conducted in secure, authorized environments. Unauthorized use is prohibited.
 
 ## Overview
 The File Integrity Checker is a Python-based GUI application engineered for computation and verification of file hashes, ensuring data integrity and protection against unauthorized modifications or corruption. Leveraging industry-standard cryptographic hashing algorithms such as MD5, SHA-1, and SHA-256, the application provides a mechanism for validating file authenticity. Its secure file processing methodology, including chunk-based reading and in-memory hash computation, ensures optimal performance while minimizing potential attack vectors.
