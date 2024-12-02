@@ -121,10 +121,6 @@ The File Integrity Checker is a Python-based GUI application engineered for comp
 4. **Validate Backup Integrity**:
    - Periodically verify backup files to ensure they remain uncorrupted and secure.
 
----
-
-## Disclaimer
-This tool is intended for **educational and testing purposes only**. Users are responsible for ensuring compliance with relevant laws and regulations when using this tool in real-world scenarios.
 
 ---
 
@@ -133,6 +129,3 @@ This project is licensed under the **MIT License**. See the LICENSE file for det
 
 ---
 
-## Contact
-Developed by **Ramyar Daneshgar**.  
-For questions, suggestions, or contributions, contact: **ramyarda@usc.edu**
